@@ -1,0 +1,29 @@
+GET http://localhost:5088/games
+
+###
+GET http://localhost:5088/games/1
+
+###
+POST http://localhost:5088/games
+Content-Type: application/json
+
+{
+    "name": "FIFA 2024",
+    "genre": "Sports",
+    "price": 59.99,
+    "releaseDate": "2024-09-01"
+}
+
+###
+PUT  http://localhost:5088/games/1
+Content-Type: application/json
+
+{
+    "name": "Mario Kart 9",
+    "genre": "Racing",
+    "price": 9.99,
+    "releaseDate": "2024-09-01"
+}
+
+###
+DELETE http://localhost:5088/games/1
